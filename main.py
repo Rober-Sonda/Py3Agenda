@@ -11,7 +11,7 @@ def ejecutarScripts():
   if opcion == "A":
     os.system('python Agenda/agenda.py')
   elif opcion == "B":
-    os.system('python AdivinaNumero/adivnum.py')
+    os.system('python Adivina-el-numero/AdivinaElNum.py')
   elif opcion == "S":
     print("Gracias por usar esta porción de código")
     raise SystemExit #quit() o #Ctrl-D
