@@ -3,9 +3,24 @@ import random
   
 
 def jugarAdivina():
-  vidas = 5
-  numero_inicio = 1
-  numero_final = 10
+  print("Bienvenido a adivina un número - elije la dificultad del juego")
+  print("F - Facil")
+  print("M - Media")
+  print("D - Difícil")
+  dificultad = input("Elije la dificultad -> ")
+  if dificultad == "F":
+    vidas = 5
+    numero_inicio = 1
+    numero_final = 10
+  elif dificultad=="M":
+    vidas = 5
+    numero_inicio = 1
+    numero_final = 40
+  elif dificultad == "D":
+    vidas = 3
+    numero_inicio = 1
+    numero_final = 40
+
   ElNumero = random.randint(numero_inicio, numero_final)
   print("Bienvenido a este juego, adivina un número del {} al {}".format(numero_inicio,numero_final))
   
@@ -19,6 +34,7 @@ def jugarAdivina():
         print("Acertaste!! Felicitaciones Crack!")
         print("Gracias por jugar a \"Adivina un número\"")
         JugarOtraVez = input("¿Querés jugar otra vez?: si | no -> ")
+        print("Esa opción no es correcta")
         if JugarOtraVez.lower() =="si":
           jugarAdivina()
         else:
@@ -38,6 +54,7 @@ def jugarAdivina():
     print("El número era el {} ".format(ElNumero))
     print("Gracias por jugar a \"Adivina un número\"")
     JugarOtraVez = input("¿Querés jugar otra vez?: si | no -> ")
+    print("Esa opción no es correcta")
     if JugarOtraVez.lower() =="si":
       jugarAdivina()
     else:
