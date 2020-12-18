@@ -8,7 +8,7 @@ def ejecutarScripts():
   print("C - Dibujar un círculo")
   print("D - Conjuntos")
   print("S - Salir")
-  opcion = input("Elige un programa")
+  opcion = input("Elige un programa -> ").upper()
   if opcion == "A":
     os.system('python Agenda/agenda.py')
   elif opcion == "B":
